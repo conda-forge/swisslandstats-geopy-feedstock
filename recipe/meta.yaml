@@ -1,5 +1,5 @@
 {% set name = "swisslandstats-geopy" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/swisslandstats-geopy-{{ version }}.tar.gz
-  sha256: fe7d8bfa3a65264288cff1918a0bc624bd4772a2c1b59d1eb1479996d0509361
+  sha256: 908072a31db820c5f1b683a2fd01ff01102e2811e773e6c5da236a137f22929f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -43,7 +43,7 @@ about:
   license: GPL-3.0-or-later
   license_file: LICENSE.txt
   doc_url: https://swisslandstats-geopy.readthedocs.io/
-  dev_url: https://github.com/martibosch/swisslandstats-geopy  
+  dev_url: https://github.com/martibosch/swisslandstats-geopy
 
 extra:
   recipe-maintainers:
