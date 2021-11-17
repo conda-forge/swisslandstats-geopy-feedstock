@@ -18,15 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - matplotlib >=2.2
     - numpy >=1.15
     - pandas >=0.17.0
     - python >=3.6
     - rasterio >=1.0.0
-    - geopandas >=0.8.0
-    - pygeos
+    - geopandas >=0.10.0
     - osmnx >=1.0.0
     - xarray
 
