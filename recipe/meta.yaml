@@ -1,5 +1,5 @@
 {% set name = "swisslandstats-geopy" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/swisslandstats-geopy-{{ version }}.tar.gz
-  sha256: 908072a31db820c5f1b683a2fd01ff01102e2811e773e6c5da236a137f22929f
+  sha256: be3f50fb294a91abdc8927c4b174b5598d6550516c591d22f7e5aeb9ed4b2596
 
 build:
   number: 0
