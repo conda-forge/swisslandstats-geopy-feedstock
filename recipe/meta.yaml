@@ -1,5 +1,5 @@
 {% set name = "swisslandstats-geopy" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/swisslandstats-geopy-{{ version }}.tar.gz
-  sha256: be3f50fb294a91abdc8927c4b174b5598d6550516c591d22f7e5aeb9ed4b2596
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: bd8a4a9e85ffea53d27584a05cc4328cca2e96aa4c6d5c4b3c7940bde42fa0b9
 
 build:
   number: 0
@@ -18,13 +18,15 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
+    - setuptools >=61.0
   run:
-    - matplotlib >=2.2
+    - matplotlib-base >=3.0.0
     - numpy >=1.15
     - pandas >=0.17.0
     - python >=3.6
     - rasterio >=1.0.0
+    - requests-cache
     - geopandas >=0.10.0
     - osmnx >=1.0.0
     - xarray
