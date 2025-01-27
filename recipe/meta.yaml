@@ -24,9 +24,9 @@ requirements:
     - matplotlib-base >=3.0.0
     - numpy >=1.15
     - pandas >=0.17.0
+    - pooch
     - python >={{ python_min }}
     - rasterio >=1.0.0
-    - requests-cache
     - geopandas >=0.10.0
     - osmnx >=1.0.0
     - xarray
